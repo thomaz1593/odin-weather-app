@@ -11,4 +11,4 @@ A small weather app that consumes an weather API. The app should:
 
 Link to [project assignment.](https://www.theodinproject.com/lessons/node-path-javascript-weather-app)
 
-Link to [live preview.](https://thomaz1593.github.io/odin-library/)
+Link to [live preview.](https://thomaz1593.github.io/odin-weather-app/)
