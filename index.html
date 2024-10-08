@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Odin Weather App</title>
+  </head>
+
+  <body>
+    <header>
+      <span class="header-logo">Odin Forecast</span>
+      <li class="header-list">
+        <ul class="header-item">
+          <a href="https://github.com/thomaz1593">Contact</a>
+        </ul>
+        <ul class="header-item">
+          About
+        </ul>
+      </li>
+    </header>
+
+    <main class="main-content">
+      <h1 class="title-page">See What the Skies Hold</h1>
+      <form action="" class="main-form">
+        <input
+          class="input-city"
+          id="input-city"
+          type="text"
+          placeholder="city name or ZIP code"
+        />
+        <button class="btn-check" id="btn-check">Get Forecast</button>
+      </form>
+
+      <div class="forecast-content">
+        <div id="spinner" class="spinner" style="display: none"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <span class="footer-logo">Odin Forecast &copy;</span>
+        <span class="footer-creator">
+          Made with 💖 by
+          <a href="https://github.com/thomaz1593">Thomaz Gabriel</a></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

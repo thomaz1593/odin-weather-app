@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap");
+
+/* ***** RESET DEFAULT BROWSER SETTINGS ***** */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ***** PAGE STYLES ***** */
+
+:root {
+  --primary-color: #008080;
+  --secondary-color: #ffb6b3;
+  --text-color: #333333;
+  --card-color: #ffffff;
+  --border-color: #e0e0e0;
+  --background-color: #f5f5f5;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color);
+  font-family: "Lato";
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.header-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Cinzel";
+  cursor: pointer;
+}
+
+.header-list {
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.title-page {
+  font-family: "Roboto Slab";
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-city {
+  border-radius: 10px;
+  width: 600px;
+  height: 40px;
+  border: 2px solid var(--border-color);
+  background-color: var(--card-color);
+}
+
+.btn-check,
+.btn-toggle {
+  border-radius: 10px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  color: var(--background-color);
+}
+
+.btn-check:hover,
+.btn-toggle:hover {
+  background-color: #02a7a7;
+}
+
+.forecast-content {
+  margin-top: 40px;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #008080;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.condition-info {
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.icon-div {
+  display: flex;
+}
+
+.icon-img {
+  height: 16px;
+}
+
+.city-info {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Roboto Slab";
+}
+
+.forecast-info {
+  display: flex;
+}
+
+.temperature-info {
+  font-size: 3.3rem;
+  font-family: "Roboto Slab";
+  padding-right: 15px;
+}
+
+.extra-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  border-left: 3px solid var(--border-color);
+}
+
+.toggle-temperature {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-page {
+  text-align: justify;
+  width: 80%;
+}
+
+.about-title {
+  font-family: "Roboto Slab";
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin: 10px 0;
+}
+
+.about-bold {
+  font-weight: bold;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-goals {
+  font-family: "Roboto Slab";
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 30px 50px;
+  color: var(--background-color);
+}
+
+.footer-creator a,
+.header-item a {
+  color: var(--background-color);
+  font-weight: bold;
+}
