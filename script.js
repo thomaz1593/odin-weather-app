@@ -56,12 +56,12 @@ function renderCurrentWeather(cityData) {
       const celsius = convertToCelsius(currentCondition.temp);
       const feelCelsius = convertToCelsius(currentCondition.feelslike);
       tempText.textContent = `${celsius.toFixed(2)}°C`;
-      feelText.textContent = `${feelCelsius.toFixed(2)}°C`;
+      feelText.textContent = `Feels like: ${feelCelsius.toFixed(2)}°C`;
       btnToggle.textContent = "In Fahrenheit";
       isFahrenheit = false;
     } else {
       tempText.textContent = `${currentCondition.temp}°F`;
-      feelText.textContent = `${currentCondition.feelslike}°F`;
+      feelText.textContent = `Feels like: ${currentCondition.feelslike}°F`;
       btnToggle.textContent = "In Celsius";
       isFahrenheit = true;
     }
